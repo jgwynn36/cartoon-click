@@ -62,13 +62,13 @@ class App extends Component {
           <Wrapper
             shakeWrapper={this.state.shakeit}
             cartoons={this.state.cartoons.map(cartoon => (
-              <Card
+              <Card>
                 clickCartoon={this.clickCartoon}
                 id={cartoon.id}
                 key={cartoon.id}
                 name={cartoon.name}
                 image={cartoon.image}
-              />
+              </Card>
             ))}
           />
           <footer className="footer">
